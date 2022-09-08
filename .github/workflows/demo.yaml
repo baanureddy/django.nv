@@ -27,6 +27,7 @@ jobs:
 
   integration:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - run: echo "This is an integration step"
       - run: exit 1
