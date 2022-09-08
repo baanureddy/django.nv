@@ -9,7 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest                    # similar to "image" in GitLab
     steps:
-      - run: echo "This is a build step"      # similar to "script" in GitLab
+    - name: 'echoing'
+    - run: echo "This is a build step" > my-artifact
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: my_file.txt
+      
 
   test:
     runs-on: ubuntu-latest
