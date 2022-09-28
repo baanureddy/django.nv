@@ -1,0 +1,11 @@
+name: Triggering pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "A initial message"
