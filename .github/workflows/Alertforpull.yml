@@ -14,5 +14,5 @@ jobs:
         echo "$commit_url"
         branch_url="${{ github.server_url }}/${{ github.repository }}/tree/${git_branch}"
         echo "$branch_url"
-        curl -X POST -H 'Content-type: application/json' --data '{"brance_name":"$git_branch","commit_url":"$commit_url","branch_url":"$branch_url"}' https://hooks.slack.com/services/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
+        curl -X POST -H 'Content-type: application/json' --data '{"brance_name":"$git_branch","commit_url":"$commit_url","branch_url":"$branch_url"}' curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
         
