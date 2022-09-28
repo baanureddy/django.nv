@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "A initial message"
+        git_branch=${GITHUB_REF#refs/heads/}
+        echo "$git_branch"
+        
