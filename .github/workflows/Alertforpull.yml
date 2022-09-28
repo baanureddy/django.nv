@@ -12,4 +12,6 @@ jobs:
         echo "$git_branch"
         commit_url="${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}"
         echo "$commit_url"
+        branch_url="${{ github.server_url }}/${{ github.repository }}/tree/${git_branch}"
+        echo "branch_url"
         
