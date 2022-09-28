@@ -10,4 +10,6 @@ jobs:
     - run: |
         git_branch=${GITHUB_REF#refs/heads/}
         echo "$git_branch"
+        commit_url="${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}"
+        echo "$commit_url"
         
