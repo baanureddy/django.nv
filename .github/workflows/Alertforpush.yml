@@ -14,4 +14,4 @@ jobs:
           echo "$git_branch"
           url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
           echo "$url"
-          curl -X POST -H "Content-Type: application/json" -d '{"pull_request": "$url"}' https://hooks.slack.com/services/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
+          curl -X POST -H "Content-Type: application/json" -d '{"pull_request": "$url"}' https://hooks.slack.com/services/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
