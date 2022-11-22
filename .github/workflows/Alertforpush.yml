@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          git_branch=${GITHUB_REF#refs/heads/}
+          git_branch="${GITHUB_REF}/${GITHUB_REF_NAME}/
           echo "$git_branch"
-          url=${GITHUB_API_URL}
+          url="${GITHUB_SERVER_URL}/${GITHUB_SHA}"
           echo "$url"
