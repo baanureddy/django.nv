@@ -1,5 +1,3 @@
-Alert_workflow:
-
 name: alertforpush
 
 on:
