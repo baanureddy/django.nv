@@ -1,0 +1,16 @@
+Alert_workflow:
+
+name: alertforpush
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  alerting:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        url=${GITHUB_API_URL}
+        echo url
