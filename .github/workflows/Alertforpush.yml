@@ -14,4 +14,4 @@ jobs:
           echo "$git_branch"
           url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
           echo "$url"
-          curl -X POST -H 'Content-type: application/json' --data '{"text": "Push_merge_request","attachments": [{"fallback": "1","title": "User","text": "'"${GITHUB_ACTOR}"'"},{"fallback": "2","title": "Push_URL","text": "'"${url}"'"}]}' https://hooks.slack.com/services/${{secrets.SLACK_URL}}
+          curl -X POST -H 'Content-type: application/json' --data '{"text": "Push_merge_request","attachments": [{"fallback": "1","title": "User","text": "'"${GITHUB_ACTOR}"'"},{"fallback": "3","title": "User","text": "'"${GITHUB_ACTION_REPOSITORY}"'"},{"fallback": "2","title": "Push_URL","text": "'"${url}"'"}]}' https://hooks.slack.com/services/${{secrets.SLACK_URL}}
