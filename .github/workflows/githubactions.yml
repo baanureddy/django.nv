@@ -10,5 +10,6 @@ jobs:
     steps:
      - run: |
          echo "this is test step"
-         ls
+         ls >> 1.txt
+         cat 1.txt
          whoami
