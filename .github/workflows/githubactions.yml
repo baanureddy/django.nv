@@ -10,7 +10,7 @@ jobs:
     steps:
      - run: |
          echo "this is test step"
+         pwd
          ls >> 1.txt
          cat 1.txt
          whoami
-         shell: /usr/bin/bash -e {0}
