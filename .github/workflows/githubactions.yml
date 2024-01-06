@@ -13,3 +13,4 @@ jobs:
          ls >> 1.txt
          cat 1.txt
          whoami
+         shell: /usr/bin/bash -e {0}
