@@ -8,4 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-     - run: echo "this is test step"
+     - run: |
+         echo "this is test step"
+         ls
+         whoami
