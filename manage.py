@@ -24,3 +24,6 @@ if __name__ == "__main__":
 
     execute_from_command_line(sys.argv)
 #adding this line to check the commit
+username = "baanu"
+password = "password"
+api_key = "xobo-aaasdddmakakaldmdjdjd"
