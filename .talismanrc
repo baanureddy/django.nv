@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: manage.py
+  checksum: 31a296910359651bbd70468213ba5f71cbe07b287f980b22a2a551b2f8a6f8ff
+- filename: manage.pyh
+  checksum: 26f337c179981beee1816c23cbfe940b42d7173292a18648b2ecf5fb0b7d4f30
+version: ""
