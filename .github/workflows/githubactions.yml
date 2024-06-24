@@ -1,8 +1,8 @@
 name: Learning workflow
+
 on:
-  push:
-    branches:
-      - main
+  # Scan on-demand through GitHub Actions interface:
+  workflow_dispatch: {}
 
 jobs:
   test:
